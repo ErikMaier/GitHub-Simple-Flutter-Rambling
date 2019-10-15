@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
 class Answer extends StatelessWidget {
-final Function selectHandler;
-final String answerText;
+  final Function selectHandler;
+  final String answerText;
 
-Answer(this.selectHandler, this.answerText);
+  Answer(this.selectHandler, this.answerText);
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +14,7 @@ Answer(this.selectHandler, this.answerText);
         color: Colors.blue,
         textColor: Colors.white,
         child: Text(answerText),
-        onPressed:selectHandler,
+        onPressed: selectHandler,
       ),
     );
   }
